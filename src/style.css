@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); /*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /*font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*font-family: 'Lato', sans-serif;*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    background-color: #0178C8;
+}
+.header .titulo{
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+.footer{
+    width: 100%;
+    background-color: #0D1321;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    text-align: center;
+}
