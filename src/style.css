@@ -7,6 +7,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #F5F5F5;
+}
 .header{
     width: 100%;
     padding: 10px 40px 10px 40px;
@@ -16,6 +20,21 @@
     color: #ffffff;
     font-family: 'Pacifico', cursive;
     font-weight: 400;
+}
+.texto{
+    padding: 40px 20px 40px 20px;
+}
+.texto > p{
+    font-family: 'Poppins', sans-serif;
+}
+.tarjeta{
+    width: 100%;
+    max-width: 380px;
+    height: 220px;
+    border-radius: 10px;
+    background: url(./img/fondo.jpg);
+    background-size: cover;
+    padding: 30px;
 }
 .footer{
     width: 100%;
