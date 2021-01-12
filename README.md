@@ -16,9 +16,6 @@
 
 Con ValCard puedes verificar si tu número de tarjeta de crédito es correcta con el uso
 del algoritmo de Luhn.
-
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
-
 ## 2. Diseño del proyecto
 
 En este proyecto tendrás que construir una aplicación web que le permita a un
