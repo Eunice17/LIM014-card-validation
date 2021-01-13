@@ -51,11 +51,10 @@ que el número que ingresó sea un número de tarjeta de crédito válida o no.
 
 ### 2.4. Feedback e indicaciones
 
-* [ ] Manipulación de strings.
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Declaración correcta de variables (const & let)
+* En la parte del Header agregar un icono de usuario y carrito para que sea mas real el uso de la aplicación
+   en tiendas comerciales.
+* En el footer agregar mas links realizistas para que mejore el aspecto del footer.
+
 
 ### 2.5. Foto del prototipo final
 
