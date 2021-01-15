@@ -26,6 +26,7 @@ body{
 .container > .texto{
     margin: 10px 20px;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 /*----------Inicio a editar el conteiner main----------*/
@@ -34,30 +35,22 @@ body{
     min-height: calc(100vh - 76px - 85px);
     display: flex;
     flex-direction: column;
-    border: red solid 4px;
     padding: 10px 20px;
     font-size: 16px;
-}
-.container > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*--------Editando el contenido de la tarjeta-------------*/
-.container > .cont-taj{
-    display: flex;
-    background-color: palegoldenrod;
-    align-items: center;
-    justify-content: center;
     
 }
-/*-------------Editando la tarjeta de crédito------------*/
+.container > .cont-taj{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
 .tarjeta{
     max-width: 340px;
     border-radius: 10px;
     background: url(./img/fondo.jpg);
     background-size: cover;
-    padding: 30px;
+    padding: 25px;
     box-shadow: -10px 10px 8px rgba(0,0,0,0.3);
     z-index: 20;
 }
@@ -108,7 +101,107 @@ body{
 .tarjeta .fecha-card > span{
     display: block;
 }
+/*------------Posicionamiento de mi CARD DE INGRESO DE DATOS ME HIZO SUFRIR!!!-------*/
+.card .card-form{
+    /*width:100%*/
+    max-width: 460px;
+    position: absolute;
+    top: 80%;
+    right:0;
+    left: 0;
+    background-color: #ffffff;
+    padding:60px 40px 30px 40px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: -8px 8px 10px rgba(0,0,0,0.3);
+    border: 1px solid rgb(226, 226, 226);
 
+}
+/*Centrar mi mensaje y boton validar*/
+.card-form .mensaje,
+.card-form .boton{
+    justify-content: center;
+    text-align: center;
+}
+.card-form .boton > input{
+    width: 100%;
+    /*background-color: #0178C8;*/
+    background-image: linear-gradient(to right, #016bb3, #0178C8, #068ae2);
+    color:#ffffff;
+    background-size: 200%;
+    transition: .5s;
+    font-weight: bold;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.card-form .boton > input:hover{
+    background-position: right;
+}
+.label{
+    display: grid;
+    grid-template-columns: 6% 94%;
+    position: relative;
+    margin:20px 0px;
+    border-bottom: 1px solid #D0CCD0;
+}
+.label .inputs{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    border: none;
+}
+.label .icon{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #D0CCD0;
+}
+.numero-label >h5,
+.nombre-label>h5{
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: #D0CCD0;
+}
+.label.focus div h5{
+    top: -5px;
+    font-size: 12px;
+    color: #FFB100;
+    
+}
+.label.focus .icon{
+    color: #FFB100;
+}
+.label::after,
+.label::before{
+    content: "";
+    width: 0;
+    bottom: -2px;
+    /*border: 1px solid red;*/
+    background-color: #FFB100;
+    height: 2px;
+    position: absolute;
+}
+.label::after{
+    right: 50%;
+}
+.label::before{
+    left: 50%;
+}
+.label.focus::after,.label.focus::before{
+    width: 50%;
+    transition: .5s;
+}
 /*-----------Editando footer---------*/
 .footer{
     width: 100%;
@@ -119,3 +212,27 @@ body{
     text-align: center;
 }
 
+@media(min-width:768px){
+    .card .card-form{
+        right: 25%;
+        left: 25%;
+    }
+}
+@media(min-width:1024px){
+    .card .card-form{
+        right: 28%;
+        left: 28%;
+    }
+}
+@media(min-width:1240px){
+    .card .card-form{
+        right: 31%;
+        left: 31%;
+    }
+}
+@media(min-width:1300px){
+    .card .card-form{
+        right: 36%;
+        left: 36%;
+    }
+}
