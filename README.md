@@ -19,15 +19,7 @@ mediante tarjeta de crédito, para verificar si los números de la tarjetas de c
 de sus usuarios son válidas.
 ## 2. Diseño del proyecto
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+[![Diseño en Figma](https://github.com/Eunice17/LIM014-card-validation/blob/master/src/img/valCard.PNG "Diseño en Figma")](https://github.com/Eunice17/LIM014-card-validation/blob/master/src/img/valCard.PNG "Diseño en Figma")
 
 ### 2.1. Usuarios y objetivos del proyecto
 
