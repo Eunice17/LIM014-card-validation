@@ -62,22 +62,46 @@ validar.addEventListener('click',()=>{
 });
 
 function resultados(bandera,michi){
-    numero.textContent=michi;
+    let cadena=[];
+    let cadenaR="",cadenaSalida="";
+    for(let i=0;i<michi.length;i++){
+        cadena[i]=michi[i];
+    }
+    let numReverse=cadena.reverse();
+    for(let j=0;j<numReverse.length;j++){
+        cadenaR+=numReverse[j];
+    }
+    let numSeparado=cadenaR.replace(/([0-9]{4})/g,'$1 ').trim();
+    for(let i=numSeparado.length-1;i>=0;i--){
+        cadenaSalida+=numSeparado[i];
+    }
+    
+    numero.textContent=cadenaSalida;
+
     if(bandera==true){
-        mensaje.textContent='Número de tarjeta válida';
+        let cad=`Número de tarjeta válida  <span class="material-icons">verified</span>`;
+        mensaje.innerHTML=cad;
         mensaje.classList.remove('invalida');
         label[0].classList.remove('invalida');
         label[1].classList.remove('invalida');
+        mensaje.classList.remove('noCheck');
+
         mensaje.classList.add('valida');
+        mensaje.classList.add('check');
         label[0].classList.add('valida');
         label[1].classList.add('valida');
 
     }else{
-        mensaje.textContent='Número de tarjeta inválida';
+        let cad=`Número de tarjeta inválida <span class="material-icons">error</span>`
+        mensaje.innerHTML=cad;
+        
         mensaje.classList.remove('valida');
         label[0].classList.remove('valida');
         label[1].classList.remove('valida');
+        mensaje.classList.remove('check');
+
         mensaje.classList.add('invalida');
+        mensaje.classList.add('noCheck');
         label[0].classList.add('invalida');
         label[1].classList.add('invalida');
     }
