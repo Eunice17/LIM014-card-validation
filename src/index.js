@@ -52,7 +52,7 @@ validar.addEventListener('click',()=>{
         if(num!=''){
             let mostrarNum=num.replace(/\s/g,'');
             let bandera=validator.isValid(mostrarNum);
-            let michi=validator.miskify(mostrarNum);
+            let michi=validator.maskify(mostrarNum);
 
             resultados(bandera,michi);
 

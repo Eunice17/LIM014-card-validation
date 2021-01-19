@@ -1,12 +1,12 @@
 const validator = {
-  miskify:(nIngresado)=>{
-
-    return mostrarNumero(nIngresado);
-    
-  },
   isValid:(nIngresado)=>{
 
     return validacion(nIngresado);
+  },
+  maskify:(nIngresado)=>{
+
+    return mostrarNumero(nIngresado);
+    
   }
 };
 function mostrarNumero(n){
@@ -27,7 +27,7 @@ function validacion(num){
   let sumPares=0,sumaTotal=0;
   let sumImpares=0;
   console.log(num);
-  if(num.length>=14){
+  if(num.length>=11){
     for(let i=num.length-2;i>=0;i=i-2){
       let unidades=num[i]*2;
       residuo=0;
