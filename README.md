@@ -49,7 +49,7 @@ que el número que ingresó sea un número de tarjeta de crédito válida o no.
 
 ### 2.5. Foto del prototipo final
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+[![Diseño en papel final](https://github.com/Eunice17/LIM014-card-validation/blob/master/src/img/papel-final.jpg "Diseño en papel final")](https://github.com/Eunice17/LIM014-card-validation/blob/master/src/img/papel-final.jpg "Diseño en papel final")
 
 ### Visualización del proyecto desarrollado
 
