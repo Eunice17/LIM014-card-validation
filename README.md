@@ -17,6 +17,9 @@
 ValCard es una aplicación web diseñada para supermecados o empresas que admiten pago 
 mediante tarjeta de crédito, para verificar si los números de la tarjetas de crédito 
 de sus usuarios son válidas.
+
+Solo se permite el ingreso de números, no se permite el ingreso de letras ni caracteres especiales. Solo se puede
+ingresar como mínimo 11 número y como máximo 16.
 ## 2. Diseño del proyecto
 
 [![Diseño en Figma](https://github.com/Eunice17/LIM014-card-validation/blob/master/src/img/valCard.PNG "Diseño en Figma")](https://github.com/Eunice17/LIM014-card-validation/blob/master/src/img/valCard.PNG "Diseño en Figma")
@@ -30,36 +33,24 @@ El objetivo de esta aplicación es que el usuario final pueda visualizar
 que el número que ingresó sea un número de tarjeta de crédito válida o no.
 ### 2.2. Solución a problemas/necesidades del usuario
 
-* Con el diseño de una tarjeta de crédtio el usuario se sentirá comó durante el servicio.
+* Con el diseño de una tarjeta de crédtio el usuario se sentirá cómodo durante el servicio.
 * Los colores usados en el diseño transmitiran confianza y seriedad al usuario.
 * La aplicación diseñada intuitivamente será fácil de usar para todo tipo de usuario.
 
 ### 2.3. Foto de prototipo en papel
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
+[![Diseño en papel](https://github.com/Eunice17/LIM014-card-validation/blob/master/src/img/papel.jpg "Diseño en papel")](https://github.com/Eunice17/LIM014-card-validation/blob/master/src/img/papel.jpg "Diseño en papel")
 
 ### 2.4. Feedback e indicaciones
 
-* En la parte del Header agregar un icono de usuario y carrito para que sea mas real el uso de la aplicación
-   en tiendas comerciales.
-* En el footer agregar mas links realizistas para que mejore el aspecto del footer.
-
+* Agregar icono que indiqué que el número ingresado por el usuario es válido o no.
+* Cambiar el color amarillo cuando el número ingresado de usuario es válido, por el color verde estandar, ya que el
+   color amarillo representa advertencia.
 
 ### 2.5. Foto del prototipo final
 
 * [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
-### Estructura del código y guía de estilo
+### Visualización del proyecto desarrollado
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-
+* https://lim-014-card-validation.eunice17.vercel.app/
